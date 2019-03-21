@@ -1,0 +1,4 @@
+/static/images/Bill Clinton.jpg
+
+Bill
+Clinton

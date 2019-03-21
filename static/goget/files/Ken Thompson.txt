@@ -1,0 +1,5 @@
+/static/images/kenthompson.jpg
+
+Ken
+Thompson
+I really did all the work in creating C and i was only allowed to take the credit for B, now i Go

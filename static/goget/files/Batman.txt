@@ -1,0 +1,4 @@
+/static/images/batman.jpg
+
+Bruce
+Wayne

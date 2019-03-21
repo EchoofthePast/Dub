@@ -1,0 +1,215 @@
+
+body{
+     background:blue;
+}
+
+.page{
+    position:Relative;
+    border:solid;
+    background:white;
+    width:1250px;
+    height:750px;
+    left: 200px;
+    top: 100px;
+}
+
+.title{
+    position:Relative;
+    border:solid;
+    width: 700px;
+    height: 50px;
+    left: 25px;
+    top: 25px;
+    text-align: center;
+}
+
+.profile{
+    text-align: center;
+    position:Relative;
+    border:solid;
+    width:300px;
+    height:450px;
+    left:900px;
+    top:-500px;
+    padding: 5;
+    margin: 5;
+}
+
+
+
+.image{
+    position:Relative;
+    border:solid;
+    left:25px;
+    width:250px;
+}
+
+
+.search{
+  position:relative;
+  border:solid;
+  left:900px;
+  top:0px;
+  width:200px;
+
+}
+
+.info{
+  position:relative;
+  border:solid;
+  left:350px;
+  top:-1050px;
+  height:600px;
+  width:500px;
+
+}
+
+.fname{
+  position:relative;
+  border:solid;
+  left:100px;
+  top:50px;
+  height:100px;
+  width:200px;
+
+}
+
+.lname{
+  position:relative;
+  border:solid;
+  left:100px;
+  top:50px;
+  height:100px;
+  width:200px;
+
+}
+
+
+.leftbar {
+	position: relative;
+	left: 50px;
+	top: 0px;
+	z-index: 99;
+	list-style: none;
+	margin-left: 0;
+	width: 100%;
+	max-height: none;
+	border: solid;
+	border-width: 6px;
+	border-color: blue;
+	height: 500px;
+	width: 250px;
+	padding: 5;
+	margin: 5;
+	background: rgba(221, 214, 214, 0.856);
+	font-size: 2rem;
+	margin-top: 0;
+	margin-left: -2px;
+	max-width: 1000px
+}
+
+
+button{
+  left: 20px;
+	width: 200px;
+	border-style: solid;
+	border-width: 3;
+	cursor: pointer;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	line-height: normal;
+	margin: 0 0 1.42857rem;
+	position: relative;
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	padding-top: 1.14286rem;
+	padding-right: 2.28571rem;
+	padding-bottom: 1.21429rem;
+	padding-left: 2.28571rem;
+	font-size: 1.14286rem;
+	background-color: rgb(47, 48, 139);
+	border-color: #000;
+	color: #fff;
+	transition: background-color 300ms ease-out
+}
+
+
+.details{
+  position:relative;
+  border:solid;
+  left:100px;
+  top:50px;
+  height:100px;
+  width:200px;
+
+}
+
+.money{
+  position:relative;
+  border:solid;
+  left:100px;
+  top:50px;
+  height:100px;
+  width:200px;
+
+}
+
+.copyright_notice{
+    position:Relative;
+    border:solid;
+    left:750px;
+    top:0px;
+    width:350px;
+    align-content: center;
+}
+
+ /* Dropdown Button */
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  left:11 00px;
+  top: -600px;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Change color of dropdown links on hover */
+.dropdown-content button:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;} 
