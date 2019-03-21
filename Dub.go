@@ -3,19 +3,11 @@ package main
 import (
 	"fmt"
 	"net/http"
-
-	//"fmt"
 	"html/template"
 
 	"github.com/echoofthepast/Dub/static/goget"
 )
 
-// Go made programming fun again for me. Coming from intergrated firmware programming in C to GO...resurected me
-// the simple removal of the ; at the end of every statement was a miracle i preyed for regularly
-// := this little improvement from Go was a break through in programming
-// But there is far for us to go in Go
-// Go needs the standard packages to be more matured.
-// packages are being breated by the community to correct defficiencies
 
 // Go Gophers out there will need a starting point premade for them having solved a thousand problems.
 
