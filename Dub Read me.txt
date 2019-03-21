@@ -1,0 +1,5 @@
+Dub is a simple start to  unlimited possibilities, building from dub you are able to make many web based applications
+So Dub is a web based program designed to be the starting point of almost any kind of web Go Program.
+This starter application will allow Gophers to be able to focus on solving the many other challenges that lie ahead
+while dub has paved the way for the beginner to learn from a fully functional but simple GO,HTML,CSS and Javascript application
+

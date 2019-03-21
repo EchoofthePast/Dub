@@ -1,0 +1,58 @@
+<html>
+    <head>
+         <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.css">
+    </head>
+    
+    <body>
+        <div class= "page">
+            <div class= "title">
+                <p> </p>
+            </div>
+
+            <div class= "profile">
+                <h1>{{.Name}} {{.Surname}} </h1>
+
+                    <div class="image">
+                    <a target="_blank" href= {{.Url}}><img border="0" img src= "{{.Image0}}" height="300" width="250"></a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="{{.UrlList.Url1}}">Link 1</a>
+                        <a href="{{.UrlList.Url2}}">Link 2</a>
+                        <a href="{{.UrlList.Url3}}">Link 3</a>
+                    </div>
+                </div>
+                <script>
+                /* When the user clicks on the button,
+                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+                
+                // Close the dropdown menu if the user clicks outside of it
+                window.onclick = function(event) {
+                    if (!event.target.matches('.dropbtn')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) { var openDropdown=dropdowns[i]; if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show'); } } } }
+
+ 
+                </script>
+            </div>
+
+        <div class= "info">
+            <h3>Writer, Director and screenwriter</h3>
+            <h3>All round creative genius and more</h3>
+        </div>
+
+        <div class="copyright_notice">
+            <p>Copyright &copy; <a target="_blank" href="">Profiler</a>. All Rights Reserved</p>
+        </div>
+
+    </body>
+
+</html>            

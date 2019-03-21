@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="title">
+            <p> Welcome to the Patient Managment Page </p>
+        </div>
+
+        <script>
+            var point = {{.Both }};
+                   //alert(point);
+        </script>
+
+        <div class="search">
+            <form method='get'>
+                <label for="search">Enter Name</label>
+                <input id="search" type="text" name="searchbox" value="" />
+                <input type="submit" value="Press Me">
+            </form>
+        </div>
+
+        <form>
+
+            <div class="leftbar">
+
+                <button type="button" onclick="button()">Home</button>
+                <script>
+                    function button() {
+                        window.location = 'home';
+                    }         
+                </script>
+
+                <button type="button" onclick="button1()">Add Patient</button>
+                <script>
+                    function button1() {
+                        window.location = 'addPatient';
+                    }         
+                </script>
+
+                <button type="button" onclick="button2()">Edit Patient</button>
+
+                <script>
+
+                    function button2() {
+                        window.location = 'edit';
+                    }
+                </script>
+
+                <button type="button" onclick="button3()">Remove</button>
+
+                <script>
+                    function button3() {
+                        window.location = 'remove'
+                    }
+                </script>
+            </div>
+
+        </form>
+
+
+        <div class="profile">
+            <h1>{{.Name}} {{.Surname}} </h1>
+            <script>
+                var Url = {{.Url }};
+                console.log(Url)
+            </script>
+
+            <div class="image">
+                <script>var image = {{.Image }}</script>
+                <a target="_blank" href={{.Url}}><img border="0" img src="{{.Image}}" height="300" width="250"></a>
+            </div>
+        </div>
+
+
+        <div class="info">
+            <h3>{{.Info}}</h3>
+            <h3>{{.Doc}}</h3>
+            <h3>{{.Life}}</h3>
+        </div>
+
+</body>
+
+<footer>
+    <div class="copyright_notice">
+        <p>Copyright &copy; <a target="_blank" href="">Profiler</a>. All Rights Reserved</p>
+    </div>
+</footer>
+
+</html>

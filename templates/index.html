@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+    
+</head>
+
+<body>
+
+<!-- <img img src= "/static/images/got.jpg" height="800" width="800"> -->
+
+    <div class="page">
+        <div class="title">
+            <p>Dub</p>
+        </div>
+
+        <!-- Search user input -->
+        <div class="search">
+            <form method='get'>
+                <label for="search">Enter Name</label>
+                <input id="search" type="text" name="searchbox" value="" />
+                <input class="button"type="submit" value="Press Me">
+            </form>
+        </div>
+
+        <!-- I Dub the Sir -->
+        <div class="profile">
+            <h1>{{.Name}} {{.Surname}} </h1>
+
+            <div class="image">
+                <a target="_blank" href={{.Url}}><img  img src="{{.Image1}}" height="300" width="250"></a>
+            </div>
+        </div>
+
+
+        <div class="info">
+
+            <p>Just Some More Information. {{.Info}} </p>
+
+          <div class="imageCenter">
+
+              <img  img src ="{{.Image2}}" height="400" width="650">
+            </div>
+        </div>
+
+            <div class="copyright_notice">
+                <p>Copyright &copy; Author <a target="_blank" href="">Profiler</a>. All Rights Reserved</p>
+            </div>
+
+</body>
+
+<footer>
+
+</footer>
+
+</html>
