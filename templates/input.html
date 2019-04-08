@@ -1,75 +1,67 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/inputcss.css">
 </head>
 
 <body>
     <div class="page">
+        
         <div class="title">
-            <p> Welcome to the official Creators Corner </p>
+            <p> Please Enter Data </p>
         </div>
-
-        <script>
-            var point = {{.Both }};
-                   //alert(point);
-        </script>
-
-        <div class="search">
-            <form method='get'>
-                <label for="search">Enter Name</label>
-                <input id="search" type="text" name="searchbox" value="" />
-                <input type="submit" value="Press Me">
-            </form>
-        </div>
-
-
-
+        
 
         <div class="profile">
 
             <h1>{{.Name}} {{.Surname}} </h1>
-            <script>
-                var Url = {{.Url }};
-                console.log(Url)
-            </script>
 
             <div class="image">
-                <script>var image = {{.Image }}</script>
                 <a target="_blank" href={{.Url}}><img border="0" img src="{{.Image}}" height="300" width="250"></a>
             </div>
         </div>
+        
 
         <div class= "info">
 
-                <form method='get'>
-                    <input id="search" type="text" name="searchbox" value="" />
-                    <label for="search">Name</label>
-
-                </form>
-
-                <form method='get'>
-                    <input id="search" type="text" name="searchbox" value="" />
-                    <label for="search">Surname</label>
-
-                </form>
-
-
-                <form method='get'>
-                    <input id="search" type="text" name="searchbox" value="" />
-                    <label for="search">Details</label>
-
-                </form>
-
-            
-
-                <form method='get'>
-                    <input id="search" type="text" name="searchbox" value="" />
-                    <label for="search">Financial Details</label>
-
-                </form>
+            <form method ='POST'>
+               
+                <div>
+                    <ol>
+                        <ul>
+                            <div>
+                                <label for="firstname">Name</label>
+                            </div>
+                            <input id="firstname" type="text" name="firstname" value="" />
+                        </ul>
+    
+                        <ul>
+                            <div>
+                                <label for="surnamename">Surname</label>
+                            </div>
+                            <input id="surnamename" type="text" name="surnamename" value="" />
+                        </ul>
+    
+                        <ul>
+                            <div>
+                                <label for="search">Information</label>
+                            </div>
+                            <input id="info" type="text" name="information" value="" />
+                        </ul>
+    
+                        <ul>
+                            <div>
+                                <label for="search">Identity Number</label>
+                            </div>
+                            <input id="id" type="text" name="id" value="" />
+                        </ul>
+                    </ol>    
+                </div>
+                        <div>
+                            <input type="submit" value="Press Me">
+                        </div>
+            </form>
                 
-                <input type="submit" value="Press Me">
         </div>
        
 
