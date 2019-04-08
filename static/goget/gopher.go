@@ -8,14 +8,10 @@ type DataStruct struct {
 	Image1  string
 	Image2  string
 	Image3  string
-	Power   string
-	Gold    string
-	Men     string
 	Both    string
-	Url     string
+	ID     string
 	Info    string
-	Doc     string
-	Life    string
+
 
 }
 
@@ -43,26 +39,17 @@ func Gopher(input string) (data *DataStruct) {
 	name := src[2]
 	surname := src[3]
 	info := src[4]
-	doc := src[5]
-	life := src[6]
-	power := src[7]
-	gold := src[8]
-	men := src[9]
+	id := src[5]
 
 	data = &DataStruct{
 
 		Name:    name,
 		Surname: surname,
 		Both:    name + surname,
-		Url:     "",
 		Image1:  image1,
 		Image2:  image2,
 		Info:    info,
-		Doc:     doc,
-		Life:    life,
-		Power:   power,
-		Gold:    gold,
-		Men:     men,
+		ID:		 id,
 
 	}
 
