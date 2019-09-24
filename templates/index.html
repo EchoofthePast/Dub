@@ -2,71 +2,80 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="/static/css/index.css">
-    
 </head>
 
 <body>
 
-<!-- <img img src= "/static/images/got.jpg" height="800" width="800"> -->
-
     <div class="page">
         <div class="title">
-            <p>Dub</p>
+            <p> Applications Manager</p>
         </div>
 
         <div>
             <form method='get'>
                 <div>
-                    <button class="innerbutton0" type="button" onclick="button1()" value="Edit">Edit Input</button>
+                    <button class="innerbutton0" type="button" onclick="button1()" value="Darknet">Dark Net</button>
                 </div>
             </form>
         </div>
-        
-        <script>
-            function button1() {
-                window.location = 'input';
 
-            }         
-        </script>
-
-
-        <!-- Search user input -->
-        <div class="search">
+        <div>
             <form method='get'>
-                <label for="search">Enter Name</label>
-                <input id="search" type="text" name="searchbox" value="" />
-                <input class="button"type="submit" value="Press Me">
+                <div>
+                    <button class="innerbutton1" type="button" onclick="button2()" value="Settings">Settings</button>
+                </div>
             </form>
         </div>
 
-        <!-- I Dub the Sir -->
-        <div class="profile">
-            <h1>{{.Name}} {{.Surname}} </h1>
-
-            <div class="image">
-                <a target="_blank" ><img  img src="{{.Image1}}" height="300" width="250"></a>
-            </div>
+        <div>
+            <form method='get'>
+                <div>
+                    <button class="innerbutton2" type="button" onclick="button3()" value="Library">Library</button>
+                </div>
+            </form>
         </div>
 
 
         <div class="info">
 
-            <p>Just Some More Information. {{.Info}} </p>
-
-          <div class="imageCenter">
-
-              <img  img src ="{{.Image2}}" height="400" width="650">
+            <div class="box0">
+                An Empty Box
             </div>
+
+            <div class="box1">
+                An Empty Box
+            </div>
+
+            <div class="box2">
+                An Empty Box
+            </div>
+
         </div>
 
-            <div class="copyright_notice">
-                <p>Copyright &copy; Author <a target="_blank" href="">Profiler</a>. All Rights Reserved</p>
-            </div>
+        <div class="copyright_notice">
+            <p>Copyright &copy; <a target="_blank" href="">Profiler</a>. All Rights Reserved</p>
+        </div>
 
 </body>
 
-<footer>
-
-</footer>
-
 </html>
+
+
+<script>
+    function button1() {
+        window.location = 'darknet';
+
+    }         
+</script>
+
+<script>
+    function button2() {
+        window.location = 'settings';
+    }         
+</script>
+
+<script>
+    function button3() {
+        window.location = 'library';
+    }         
+</script>

@@ -10,65 +10,142 @@
         <div class="title">
             <p> Please Enter Data </p>
         </div>
-        
+    
 
+        <button class="homebutton" type="button" onclick="button3()" value="Home">Home</button>
+        
+     
         <div class="profile">
 
             <h1>{{.Name}} {{.Surname}} </h1>
 
             <div class="image">
-                <a target="_blank" href={{.Url}}><img border="0" img src="{{.Image}}" height="300" width="250"></a>
+                <a target="_blank" ><img img.border="0" img src="{{.Image}}" height="300" width="250"></a>
+            </div>
+            <div>
+                <button onclick="upload()">Upload Image</button>
             </div>
         </div>
         
-
-        <div class= "info">
-
-            <form method ='POST'>
-               
-                <div>
-                    <ol>
-                        <ul>
-                            <div>
-                                <label for="firstname">Name</label>
-                            </div>
-                            <input id="firstname" type="text" name="firstname" value="" />
-                        </ul>
-    
-                        <ul>
-                            <div>
-                                <label for="surnamename">Surname</label>
-                            </div>
-                            <input id="surnamename" type="text" name="surnamename" value="" />
-                        </ul>
-    
-                        <ul>
-                            <div>
-                                <label for="search">Information</label>
-                            </div>
-                            <input id="info" type="text" name="information" value="" />
-                        </ul>
-    
-                        <ul>
-                            <div>
-                                <label for="search">Identity Number</label>
-                            </div>
-                            <input id="id" type="text" name="id" value="" />
-                        </ul>
-                    </ol>    
-                </div>
-                        <div>
-                            <input type="submit" value="Press Me">
-                        </div>
-            </form>
-                
-        </div>
-       
 
         <div class="copyright_notice">
             <p>Copyright &copy; <a target="_blank" href="">Profiler</a>. All Rights Reserved</p>
         </div>
 
+        <div class= "info">
+
+            <form method ='post'>
+               
+                <div>
+                    <ol>
+
+                        <div>
+                            <label for="firstname">Name</label>
+                        </div>
+                        <input id="firstname" type="text" name="firstname" value="{{.Name}}" />
+                        
+                        
+                        <div>
+                            <label for="surname">Surname</label>
+                        </div>
+                        <input id="surname" type="text" name="surname" value="{{.Surname}}" />
+                            
+                            
+
+                        <div>
+                            <label for="middlename">Middle Name</label>
+                        </div>
+                        <input id="middlename" type="text" name="middlename" value="{{.Middlename}}" />
+
+                            
+                        <div>
+                            <label for="id">ID</label>
+                        </div>
+                        <input id="id" type="text" name="id" value="{{.ID}}" />
+
+                            
+                        <div>
+                            <label for="number">Patient Number</label>
+                        </div>
+                        <input id="number" type="text" name="number" value="{{.Number}}" />
+
+                            
+                        <div>
+                            <label for="age">Age</label>
+                        </div>
+                        <input id="age" type="text" name="age" value="{{.Age}}" />
+
+
+                        <div>
+                            <label for="tel">Tel</label>
+                        </div>
+                        <input id="tel" type="text" name="tel" value="{{.Tel}}" />
+
+
+        
+                        <div>
+                            <label for="cell">Cell</label>
+                        </div>
+                        <input id="cell" type="text" name="cell" value="{{.Cell}}" />
+    
+                        <div>
+                            <label for="address">Address</label>
+                        </div>
+                        <input id="address" type="text" name="address" value="{{.Address}}" />
+        
+                        <div>
+                            <label for="suburb">Suburb</label>
+                        </div>
+                        <input id="suburb" type="text" name="suburb" value="{{.Suburb}}" />
+
+                        <div>
+                            <label for="province">Province/State</label>
+                        </div>
+                        <input id="province" type="text" name="province" value="{{.Province}}" />
+            
+                
+                        <div>
+                            <label for="city">City</label>
+                        </div>
+                        <input id="city" type="text" name="city" value="{{.City}}" />
+        
+                        <div>
+                            <label for="country">Country</label>
+                        </div>
+                        <input id="country" type="text" name="country" value="{{.Country}}" />
+        
+                        <div>
+                            <label for="information">Conditions</label>
+                        </div>
+                        <input id="information" type="text" name="information" value="{{.Information}}" />
+                        
+                        <div>
+                            <label for="medication">Medication</label>
+                        </div>
+                        <input id="medication" type="text" name="medication" value="{{.Medication}}" />
+                        
+                    </ol>
+        
+        
+                    <div>
+                        <button class="createbutton" name="input" type="submit" value="Press Me">Create File</button>
+                    </div>                                       
+                </form> 
+                        
+                   
+
 </body>
 
 </html>
+
+<script>
+    function button3() {
+        window.location = 'index';
+    }         
+</script>
+
+<script>
+    function upload() {
+        window.location = 'upload';
+    }         
+</script>

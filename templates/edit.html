@@ -1,0 +1,220 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/css/edit.css">
+</head>
+
+<body>
+    <div class="page">
+
+        <div class="title">
+            <p> Please Edit Data </p>
+        </div>
+        
+        <div class="search">
+            <form method='post'>
+                <h4><label for="search">Enter Name</label></h4>
+                <input id="search" type="text" name="searchbox" value="{{.Both}}" />
+                <button class= "searchbutton" type="submit"  value="Press Me">Press Me</button>
+            </form>
+        </div>
+
+        <div>
+            <form method='get'>
+                <div>
+                    <button class="innerbutton0" type="button" onclick="button3()" value="Home">Home</button>
+                </div>
+            </form>
+        </div>
+
+        
+       
+
+        <div class="profile">
+
+            <h1>{{.Both}} </h1>
+
+            <div class="image">
+                <a target="_blank"><img img.border="0" img src="{{.Image}}" height="300" width="250"></a>
+            </div>
+
+            
+
+            <button class='upload' onclick="upload()">Upload Image</button>
+
+
+            
+        </div>
+
+
+
+
+
+                <div class="copyright_notice">
+                    <p>Copyright &copy; <a target="_blank" href="">Profiler</a>. All Rights Reserved</p>
+                </div>
+
+
+        <div class="info">
+
+            <h3>Name: {{.Name}} {{.Middlename}} {{.Surname}} </h3>
+            <h3>ID: {{.ID}}</h3>
+            <h3>Number: {{.Number}}</h3>
+            <h3>Age: {{.Age}}</h3>
+            <h3>Tel: {{.Tel}}</h3>
+            <h3>Cell: {{.Cell}}</h3>
+            <h3>Address: {{.Address}}</h3>
+            <h3>Suburb:{{.Suburb}}</h3>
+            <h3>City:{{.City}}</h3>
+            <h3>Province/State: {{.Province}}</h3>
+            <h3>Country: {{.Country}}</h3>
+            <h3>Medical Information: {{.Information}}</h3>
+            <h3>Medication: {{.Medication}}</h3>
+
+            <div>
+                <form method='post'>
+                    <div>
+                        <button class="innerbutton2" type="button" onclick="button4()" value="Edit">Edit Data</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <div class= "patient">
+
+            <form  method='POST'>
+
+                <div >
+                    <ol>
+                        <ul>
+                            <div>
+                                <label for="firstname">Name</label>
+                            </div>
+                            <input id="firstname" type="text" name="firstname" value="{{.Name}}" />
+                        </ul>
+                        
+                        <ul>
+                            <div>
+                                <label for="surname">Surname</label>
+                            </div>
+                            <input id="surname" type="text" name="surname" value="{{.Surname}}" />
+                        </ul>
+                        
+                        <ul>
+                            <div>
+                                <label for="middlename">Middle Name</label>
+                            </div>
+                            <input id="middlename" type="text" name="middlename" value="{{.Middlename}}" />
+                        </ul>
+                        <ul>
+                            <div>
+                                <label for="id">ID</label>
+                            </div>
+                            <input id="id" type="text" name="id" value="{{.ID}}" />
+                        </ul>
+                        <ul>
+                            <div>
+                                <label for="number">Number</label>
+                            </div>
+                            <input id="number" type="text" name="number" value="{{.Number}}" />
+                        </ul>
+                        <ul>
+                            <div>
+                                <label for="age">Age</label>
+                            </div>
+                            <input id="age" type="text" name="age" value="{{.Age}}" />
+                        </ul>
+                        
+                        <ul>
+                            <div>
+                                <label for="tel">Tel</label>
+                            </div>
+                            <input id="tel" type="text" name="tel" value="{{.Tel}}" />
+                        </ul>
+                        
+                        <ul>
+                            <div>
+                                <label for="cell">Cell</label>
+                            </div>
+                            <input id="cell" type="text" name="cell" value="{{.Cell}}" />
+                        </ul>
+                        <ul>
+                            <div>
+                                <label for="address">Address</label>
+                            </div>
+                            <input id="address" type="text" name="address" value="{{.Address}}" />
+                        </ul>
+                        <ul>
+                            <div>
+                                <label for="suburb">Suburb</label>
+                            </div>
+                            <input id="suburb" type="text" name="suburb" value="{{.Suburb}}" />
+                        </ul>
+                        <ul>
+                            <div>
+                                <label for="city">City</label>
+                            </div>
+                            <input id="city" type="text" name="city" value="{{.City}}" />
+                        </ul>
+                        
+                        <ul>
+                            <div>
+                                <label for="province">Province/State</label>
+                            </div>
+                            <input id="province" type="text" name="province" value="{{.Province}}" />
+                        </ul>
+                        
+                        <ul>
+                            <div>
+                                <label for="country">Country</label>
+                            </div>
+                            <input id="country" type="text" name="country" value="{{.Country}}" />
+                        </ul>
+                        
+                        
+                        <ul>
+                            <div>
+                                <label for="information">Information</label>
+                            </div>
+                            <input id="information" type="text" name="information" value="{{.Information}}" />
+                        </ul>
+                        
+                        <ul>
+                            <div>
+                                <label for="medication">Medication</label>
+                            </div>
+                            <input id="mdeication" type="text" name="medication" value="{{.Medication}}" />
+                        </ul>
+                        
+                    </ol>    
+                </div>
+                
+                <div>
+                    <button class="innerbutton1" name="input" type="submit"  value="Press Me">Press Me</button>
+                </div>
+            </form>
+
+           
+        </div>
+
+
+</html>
+
+<script>
+    function button3() {
+        window.location = 'darknet';
+    }         
+</script>
+
+<script>
+    function upload() {
+        window.location = 'upload';
+    }         
+</script>
+
+<script>
+    function button4() {
+        document.querySelector('.patient').style.display = 'block';
+    }
+</script>

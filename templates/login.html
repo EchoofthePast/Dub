@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/css/login.css">
+</head>
+
+<body>
+
+    <!-- <img img src= "/static/images/got.jpg" height="800" width="800"> -->
+
+    <div class="page">
+        <div class="title">
+            <p>Dark Net Login</p>
+        </div>
+
+        <!-- Search user input -->
+        <div class="login">
+            <form method='get'>
+                <label for="login">Login</label>
+                <div>
+                    <input id="search" type="text" name="username" value="" />
+                    <input id="search" type="text" name="password" value="" />
+                </div>
+                <input class="button" type="submit"  value="Press Me">
+            </form>
+        </div>
+    </div>
+                    
+
+    <script>
+            access = "{{.Status}}"
+
+        if (access != ""){
+             if (access == "Open") {
+                window.location = 'index';
+            } else {
+                alert("Access Denied");
+            }
+  
+        }
+        if (access == ""){
+            alert("Welcome User Please Login")
+        }
+
+
+        </script>
+
+       
+    </body>
+
+
+</html>

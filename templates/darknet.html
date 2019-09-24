@@ -1,0 +1,142 @@
+<html>
+    <head>
+         <link rel="stylesheet" type="text/css" href="/static/css/darknet.css">
+    </head>
+    
+    <body>
+
+        <div class= "page">
+            <div class= "title">
+                <p>Personal Files</p>
+            </div>
+
+            <div class= "search">
+                <form  method='post'>
+                    <h4><label for="search">Enter Name</label></h4>
+                    <input id="search" type="text" name="searchbox" value=""/>
+                    <button class="searchbutton"type="submit" value="Press Me">Press Me</button>
+                </form>
+            </div>
+
+<div>
+    <div>
+        <form method='get'>
+            <div>
+                <button class="innerbutton0" type="button" onclick="button1()" value="Main Menu"><b>Menu</b></button>
+            </div>
+        </form>
+    </div>
+    
+    <script>
+        function button1() {
+            window.location = 'index';
+
+        }         
+    </script>
+    
+    
+    <div>
+        <form method='get'>
+            <div>
+                <button class="innerbutton1" type="button" onclick="button2()" value="Create File">New File</button>
+            </div>
+        </form>
+    </div>
+    
+    <script>
+        function button2() {
+            window.location = 'input';
+        }         
+    </script>
+    
+    <div>
+        <form method='get'>
+            <div>
+                <button class="innerbutton2" type="button" onclick="button3()" value="Edit File">Edit File</button>
+            </div>
+        </form>
+    </div>
+    
+    <script>
+        function button3() {
+            window.location = 'edit';
+        }         
+    </script>
+</div>
+            
+<div>
+    <div class="profile">
+        <h1>{{.Both}} </h1>
+        
+        <div class="image">
+            <a target="_blank"><img img.border="0" img src="{{.Image}}" height="300" width="250"></a>
+        </div>
+        <h4>{{.ID}}</h4>
+    </div>
+    
+    <button class="showbutton" name="show" value="Selected" onclick="Switch()">Show</button>
+    
+    
+    
+    <div class="info">
+
+        <h2>Name: {{.Name}} {{.Middlename}} {{.Surname}} </h2>
+        <h3>ID:  {{.ID}}</h3>
+        <h3>Patient Number:  {{.Number}}</h3>
+        <h3>Age:  {{.Age}}</h3>
+        <h3>Tel: {{.Tel}}</h3>
+        <h3>Cell: {{.Cell}}</h3>
+        <h3>Address: {{.Address}}</h3>
+        <h3>Suburb: {{.Suburb}}</h3>
+        <h3>City: {{.City}}</h3>
+        <h3>Province/State: {{.Province}}</h3>
+        <h3>Country: {{.Country}}</h3>
+        <h3>Conditions:{{.Information}}</h3>
+        <h3>Treatment:{{.Medication}}</h3>
+
+    </div>
+
+</div>
+
+    <script>
+    
+            function Switch() {
+                var info0 = "{{.Add0}}"
+                var info1 = "{{.Add1}}"
+
+                if (info0 != "") {
+                    document.querySelector('.info0').style.display = 'Block';
+                } else if (info0 == "") {
+                    document.querySelector('.info0').style.display = 'none';
+                }
+
+                if (info1 != "") {
+                    document.querySelector('.info1').style.display = 'block';
+                } else if (info1 == "") {
+                    document.querySelector('.info1').style.display = 'none';
+                }
+
+            }
+
+        </script>
+
+
+        <div class= "info0">
+            <h3>{{.Add0}}</h3>
+            <h3>{{.Add1}}</h3>
+            <h3>{{.Add2}}</h3>
+            <h3>{{.Add3}}</h3>
+        </div>
+
+        <div class= "info1">
+            <h3>{{.Doc0}}</h3>
+            <h3>{{.Doc1}}</h3>
+            <h3>{{.Doc2}}</h3>
+        </div>
+
+    </body>
+
+    <div class="copyright_notice">
+        <p>Copyright &copy; <a target="_blank" href="">Profiler</a>. All Rights Reserved</p>
+    </div>
+</html>      
