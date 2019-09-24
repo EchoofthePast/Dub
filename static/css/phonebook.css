@@ -1,6 +1,6 @@
 
 body{
-     background:silver;
+     background:purple;
 }
 
 .page{
@@ -23,26 +23,14 @@ body{
     text-align: center;
 }
 
-.home{
-  position:relative;
-  border:solid;
-  text-align: center;
-  background-color:lightblue;
-  top:0px;
-  left:200px;
-  margin:3px;
-  width:150px;
-  height:50px;
-}
-
 .profile{
     text-align: center;
     position:Relative;
     border:solid;
     width:300px;
     height:450px;
-    top:166px;
-    left:800px;
+    left:900px;
+    top:0px;
     padding: 5;
     margin: 5;
 }
@@ -54,12 +42,19 @@ body{
     width:250px;
 }
 
+.imageCenter{
+    position:Relative;
+    border:solid;
+    left:25px;
+    width:650px;
+}
+
 .input{
   position:relative;
   border:solid;
   text-align: center;
   background-color:lightblue;
-  top:0px;
+  top:-100px;
   left:20px;
   margin:3px;
   width:150px;
@@ -77,44 +72,17 @@ body{
   height:50px;
 }
 
-.homebutton{
-  position:relative;
-  border:solid;
-  text-align: center;
-  background-color:lightblue;
-  top:128px;
-  left:200px;
-  margin:3px;
-  width:125px;
-  height:50px;
-  text-align:center;
-}
-
-.createbutton{
-  position:relative;
-  border:solid;
-  text-align: center;
-  background-color:lightblue;
-  top:25px;
-  left:150px;
-  margin:3px;
-  width:125px;
-  height:50px;
-  text-align:center;
-}
-
 .innerbutton0{
   position:relative;
   border:solid;
   text-align: center;
   background-color:lightblue;
-  top:91px;
+  top:91;
   left:200px;
   margin:3px;
   width:125px;
   height:50px;
   text-align:center;
-  
 }
 
 .innerbutton1{
@@ -122,19 +90,17 @@ body{
   border:solid;
   text-align: center;
   background-color:lightblue;
-  top:90px;
+  top:91;
   left:200px;
   margin:3px;
   width:125px;
   height:50px;
   text-align:center;
-  
 }
+
 
 .search{
   position:relative;
-  text-align: center;
-  background-color:lightblue;
   border:solid;
   left:900px;
   top:0px;
@@ -143,13 +109,12 @@ body{
 }
 
 .info{
- background: white;
   position:relative;
   border:solid;
-  left:100px;
-  top:-360px;
-  height:800px;
-  width:600px;
+  left:50px;
+  top:-450px;
+  height:550px;
+  width:750px;
 
 }
 
@@ -173,14 +138,13 @@ body{
 
 }
 
-
 .details{
   position:relative;
   border:solid;
   left:100px;
-  top:50px;
+  top:75px;
   height:100px;
-  width:200px;
+  width:300px;
 
 }
 
@@ -198,10 +162,11 @@ body{
     position:Relative;
     border:solid;
     left:750px;
-    top:201.5px;
+    top:-200px;
     width:350px;
     align-content: center;
 }
+
  /* Dropdown Button */
 .dropbtn {
   background-color: #3498DB;
