@@ -11,8 +11,8 @@ import(
 
 
 
-//IndexHandler is the Handler for the index page
-func IndexHandler(w http.ResponseWriter, r *http.Request) {
+//PhonebookHandler is the Handler for the PhoneBook page
+func PhonebookHandler(w http.ResponseWriter, r *http.Request) {
 
 	var data *goget.DataStruct
 
@@ -54,8 +54,31 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
 
 	}
 
-	tmpl := template.Must(template.ParseFiles("templates/index.html"))
+	tmpl := template.Must(template.ParseFiles("templates/phonebook.html"))
 	tmpl.Execute(w, data)
 
 }
 
+func blank() (data *goget.DataStruct) {
+
+	image := "static/images/Gopher.png"
+	name := "Gopher"
+	middlename := "Go"
+	surname := "Google"
+	information := "The one who does the work is the Gopher"
+	id := "2000010101"
+
+	data = &goget.DataStruct{
+
+		Name:    name,
+		Surname: surname,
+		Both:    name + surname,
+		Middlename:  middlename,
+		Image:  image,
+		Information:    information,
+		ID: 	 id,
+	}
+
+	return data
+
+}

@@ -7,11 +7,11 @@ import(
 	"html"
 	"html/template"
 	"strings"
-	"github.com/Creator/Dub/static/goget"
+	"github.com/Creator/DarkNet/static/goget"
 )
 
-//InputHandler Input Page Handler Function
-func InputHandler(w http.ResponseWriter, r *http.Request) {
+//NewfileHandler New File Page Handler Function
+func NewfileHandler(w http.ResponseWriter, r *http.Request) {
 
 	r.ParseForm()
 
@@ -109,7 +109,7 @@ func InputHandler(w http.ResponseWriter, r *http.Request) {
 		goget.CreateFile(output)
 	} //end of if statement
 
-	tmpl := template.Must(template.ParseFiles("templates/input.html"))
+	tmpl := template.Must(template.ParseFiles("templates/newfile.html"))
 	tmpl.Execute(w, nil)
 
 }
